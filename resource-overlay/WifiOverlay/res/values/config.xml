@@ -83,4 +83,8 @@
     <!-- Wifi driver supports IEEE80211AX TWT (Target Wake Time) for softap -->
     <bool translatable="false" name="config_wifiSoftapHeTwtSupported">true</bool>
 
+    <!-- Enable concurrent restricted connectivity + internet connectivity
+         Note: this is conditional on the device supporting dual concurrent STAs. -->
+    <bool translatable="false" name="config_wifiMultiStaRestrictedConcurrencyEnabled">true</bool>
+
 </resources>
