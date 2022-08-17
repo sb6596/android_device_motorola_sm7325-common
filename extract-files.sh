@@ -73,6 +73,9 @@ function blob_fixup() {
         vendor/etc/vintf/manifest/vendor.dolby.media.c2@1.0-service.xml)
             sed -ni '/default1/!p' "${2}"
             ;;
+        vendor/lib/soundfx/libspeakerbundle.so | vendor/lib/soundfx/libmmieffectswrapper.so)
+            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
+            ;;
     esac
 }
 
