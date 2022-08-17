@@ -78,6 +78,9 @@ function blob_fixup() {
         vendor/lib64/libmot_chi_desktop_helper.so)
             ${PATCHELF} --add-needed "libgui_shim_vendor.so" "${2}"
             ;;
+        vendor/lib/soundfx/libspeakerbundle.so | vendor/lib/soundfx/libmmieffectswrapper.so)
+            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
+            ;;
     esac
 }
 
