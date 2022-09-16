@@ -28,20 +28,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay-aosp
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
-    FrameworksResCommon_Sys \
-    CarrierConfigResCommon_Sys \
-    CellBroadcastReceiverResCommon_Sys \
-    SystemUIResCommon_Sys \
-    TelecommResCommon_Sys \
-    TelephonyResCommon_Sys \
-    WifiResCommon_Sys \
-    FrameworksResTarget \
-    WifiResTarget
+    CarrierConfigOverlay \
+    WifiOverlay
 
 # A/B
 ifeq ($(TARGET_IS_VAB),true)
