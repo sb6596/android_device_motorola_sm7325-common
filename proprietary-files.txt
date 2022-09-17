@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from S1RG32.53-18-11-7
+# All unpinned blobs below are extracted from dubai S1RD32.55-67-4
 
 # ADSP
 vendor/bin/adsprpcd
@@ -546,7 +546,6 @@ vendor/bin/hw/vendor.qti.media.c2@1.0-service
 vendor/bin/init.qti.media.sh
 vendor/etc/init/init.qti.media.rc
 vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
--vendor/etc/vintf/manifest/c2_manifest_vendor.xml
 vendor/etc/media_yupik_v0/video_system_specs.json
 vendor/etc/media_yupik_v1/video_system_specs.json
 vendor/etc/media/video_system_specs.json
@@ -563,6 +562,9 @@ vendor/lib/libqcodec2_platform.so
 vendor/lib/libqcodec2_utils.so
 vendor/lib/libqcodec2_v4l2codec.so
 vendor/lib64/libmmosal.so
+
+# Media - from berlin S1RGS32.53-18-22-2
+-vendor/etc/vintf/manifest/c2_manifest_vendor.xml|0e532bf1c7d6a0ee2e7e03a9cc3283a5bffc7f8e
 
 # Neural networks
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti
@@ -828,7 +830,10 @@ vendor/etc/qcril_database/upgrade/ecc/27_version_qcrildb.sql
 vendor/etc/qcril_database/upgrade/ecc/28_version_qcrildb.sql
 vendor/etc/qcril_database/upgrade/ecc/29_version_qcrildb.sql
 vendor/etc/qcril_database/upgrade/ecc/30_version_qcrildb.sql
-vendor/etc/qcril_database/upgrade/ecc/32_version_qcrildb.sql
+vendor/etc/qcril_database/upgrade/ecc/31_version_qcrildb.sql
+vendor/etc/qcril_database/upgrade/ecc/34_version_qcrildb.sql
+vendor/etc/qcril_database/upgrade/ecc/35_version_qcrildb.sql
+vendor/etc/qcril_database/upgrade/ecc/39_version_qcrildb.sql
 vendor/etc/qcril_database/upgrade/ecc/3_version_qcrildb.sql
 vendor/etc/qcril_database/upgrade/ecc/4_version_qcrildb.sql
 vendor/etc/qcril_database/upgrade/ecc/5_version_qcrildb.sql
