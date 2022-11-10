@@ -1,4 +1,5 @@
 hal_attribute_aosp(cameradesktop)
+hal_attribute_aosp(dms)
 hal_attribute_aosp(ifaa)
 
 # Tag for read only filesystem type
