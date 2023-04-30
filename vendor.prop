@@ -349,6 +349,7 @@ vendor.usb.use_ffs_mtp=1
 vendor.usb.use_gadget_hal=0
 
 # Wfd
+media.wfd.max_resolution=8
 vendor.media.wfd.automode=1
 
 # WiFi
