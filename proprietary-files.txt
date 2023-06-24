@@ -891,7 +891,7 @@ system/framework/moto-ims-ext.jar:system_ext/framework/moto-ims-ext.jar
 system/framework/moto-telephony.jar:system_ext/framework/moto-telephony.jar
 
 # Radio - IMS (APK)
--system_ext/priv-app/ims/ims.apk
+-system_ext/priv-app/ims/ims.apk|586633d7da85b430da747f2f719e77661f2e7518
 
 # RIL - IMS
 -system_ext/app/ImsRcsService/ImsRcsService.apk
