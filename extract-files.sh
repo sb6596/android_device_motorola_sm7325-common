@@ -72,9 +72,6 @@ function blob_fixup() {
         vendor/etc/dolby/dax-default.xml)
             sed -i 's|volume-leveler-enable value="true"|volume-leveler-enable value="false"|g' "${2}"
             ;;
-        vendor/etc/vintf/manifest/vendor.dolby.media.c2@1.0-service.xml)
-            sed -ni '/default1/!p' "${2}"
-            ;;
         vendor/lib/libmot_chi_desktop_helper.so)
             ${PATCHELF} --add-needed "libgui_shim_vendor.so" "${2}"
             ;;
