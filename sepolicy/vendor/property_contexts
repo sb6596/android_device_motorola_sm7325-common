@@ -1,5 +1,6 @@
 # Dolby
 ro.audio.monitorWindowRotation    u:object_r:vendor_audio_prop:s0
+ro.vendor.audio.moto_sst_supported  u:object_r:vendor_audio_prop:s0
 
 # Radio
 vendor.ril.                u:object_r:vendor_radio_prop:s0
